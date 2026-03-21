@@ -23,3 +23,45 @@ bash
 shell what it translates the commands
 to use two commands at once ls (||) filename
 ping google.com ( to check if the server working or not
+recap
+🐧 Linux Recap (Simple & Clear)
+🔹 1. User Management in Linux
+Linux has two main types of users:
+Normal User → limited access
+Root User → full control of the system
+To perform admin tasks, we use sudo (SuperUser Do).
+📌 Example:
+sudo apt update 
+👉 This runs the command with root privileges.
+🔹 2. Package Installation (Package Managers)
+Package managers are used to install and manage software.
+APT → used in Kali Linux / Ubuntu
+sudo apt install firefox 
+PACMAN → used in Arch Linux
+sudo pacman -S firefox 
+PKG → used in Termux (Android)
+pkg install python 
+👉 All do the same job, but used in different systems.
+🔹 3. Software & Script Installation
+Software can be installed using package managers or scripts.
+📌 Example (script execution):
+chmod +x script.sh ./script.sh 
+👉 chmod +x makes the script executable.
+🔹 4. Linux Shell
+The shell is where we type commands to interact with the system.
+📌 Example commands:
+ls cd Documents pwd 
+👉 These help navigate files and directories.
+🔹 5. Processes & Management
+A process is a running program.
+📌 Examples:
+ps aux top htop 
+👉 To kill a process:
+kill PID 
+🔹 6. Redirection & Piping
+Redirection ( > ) → send output to a file
+ls > files.txt 
+Piping ( | ) → send output to another command
+ps aux | grep firefox 
+🔹 7. Useful Commands Learned
+mkdir folder touch file.txt cp file.txt copy.txt mv file.txt newname.txt rm file.txt
