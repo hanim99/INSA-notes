@@ -121,9 +121,33 @@ WAN/internet/long distance communication
 IP when assigning we could modify the number
 
 2,class A
-EXAMPLE 192.168.0.1
+EXAMPLE 192.168.0.1/ main network adresss
 to binary form
 11000000
-each box can 
+each box can hold 255
+in class A the first part couldn't be changed
+network part 8bit 1-126 
+host part up to 255 lets say 256 doesn't belong 
+host part 24
+classsB
+Network part the first 2 part, the rest of two host part
+1 part
+B/16 bit
+128 first part(box)
+second part 0-
+number of client 65,530
+2NETWORK PART
+2HOST PART
+
+classC
+C/24
+network part first 192-223
+192-223  255  255 255
+classD
+192 IN WIFI
+172  in 
+
+3 NETWORK PART
+
 
 
