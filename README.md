@@ -100,3 +100,30 @@ ps aux | grep firefox
 14. Useful Commands 
 
 mkdir folder touch file.txt cp file.txt copy.txt mv file.txt newname.txt rm file.txt
+week4/day4
+
+Networking
+a collection two or more  connected device
+
+main function to share resources
+
+every devices work by the application of networking
+types of network
+1,geographical coverage
+1.1,LAN 
+Features
+small 
+PAN
+MAN
+WAN/internet/long distance communication
+
+2.
+IP when assigning we could modify the number
+
+2,class A
+EXAMPLE 192.168.0.1
+to binary form
+11000000
+each box can 
+
+
