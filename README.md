@@ -104,20 +104,94 @@ Defend systems
 
 Week2 day1
 
+
+# 🐧 Linux System & User Management – Notes
+
+---
+
+## 📁 Linux File System (Important Directories)
+
+### /root
+- Home directory of the root user
+
+### /bin
+- Contains essential command binaries (like ls, cat)
+
+### /boot
+- Contains files needed to boot the system
+
+### /dev
+- Contains device files (USB, disks, terminals)
+
+### /etc
+- Contains configuration files for the system and programs
+
+### /home
+- Contains user directories (files of normal users)
+
+### /lib
+- Contains libraries required by binaries
+
+### /media
+- Temporary mount point for removable devices (USB, CD)
+
+### /mnt
+- Temporary mount directory used manually by users/admins
+
+### /opt
+- Optional software and third-party applications
+
+---
+
+## 👥 Linux User Management
+
+### Definition
+- Controls who can access the system and what they can do
+
+---
+
+### Root User
+- Superuser with full permissions
+- Can read, write, execute, delete anything
+- Can create users and assign permissions
+
+---
+
+### User
+- Normal account with limited access
+- Cannot modify system files without permission
+
+---
+
+### Sudo
+- Allows a user to run commands as root
+
+### Example:
+`bash
+sudo apt install nmap
+
 Linux User Management 
+
 to give permission to users,
+
 root user:the main user 
+
+
 sudo: has no permission so it should ask the root to access 
+
 sudo  apt  Firefox.sh
 pacman(advanced package manager)
 apt for kali depending on the distribution of Linux
+
 pacman -s 
 script( written commands)
 bash
 shell what it translates the commands
+
 to use two commands at once ls (||) filename
+
 ping google.com ( to check if the server working or not
-recap
+
  Linux Recap
  1. User Management in Linux
 Linux has two main types of users:
@@ -172,7 +246,7 @@ ls cd Documents pwd
  These help navigate files and directories.
  
  10. Processes & Management
- 11. 
+     
 A process is a running program.
 
  Examples:
