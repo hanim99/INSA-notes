@@ -186,4 +186,161 @@ week4/day4
 Networking
 a collection two or more  connected device
 
+# 🌐 Networking – Cybersecurity Notes
+
+---
+
+## ### 1️⃣ Networking
+- Networking: Connecting devices to share data  
+- Internet: Global network of networks  
+
+### Used For:
+- Communication  
+- Data transfer  
+- Security monitoring  
+
+---
+
+## ### 2️⃣ IP Address (Internet Protocol)
+- IP Address: Unique identifier for a device on a network  
+- Used for: Sending and receiving data  
+
+### Example:
+- 192.168.1.1  
+
+---
+
+## ### 3️⃣ IPv4
+- Definition: 32-bit address  
+- Format: 4 numbers separated by dots  
+
+### Example:
+- 192.168.0.1  
+
+### Range:
+- 0.0.0.0 to 255.255.255.255  
+
+### Problem:
+- Limited number of addresses  
+
+---
+
+## ### 4️⃣ IPv6
+- Definition: 128-bit address  
+- Format: Hexadecimal  
+
+### Example:
+- 2001:0db8:85a3::8a2e:0370:7334  
+
+### Advantages:
+- Huge number of addresses  
+- Better security  
+
+### Usage:
+- Future internet  
+
+---
+
+## ### 5️⃣ Difference (IPv4 vs IPv6)
+- IPv4: Short, limited  
+- IPv6: Long, almost unlimited  
+- IPv4: Common today  
+- IPv6: Growing usage  
+
+---
+
+## ### 6️⃣ Network Classification (By Geographic Coverage)
+
+### 📍 PAN (Personal Area Network)
+- Small range (few meters)  
+- Example: Bluetooth, phone hotspot  
+
+### 🏠 LAN (Local Area Network)
+- Small area (home, school)  
+- Example: WiFi network  
+
+### 🏙️ MAN (Metropolitan Area Network)
+- City-level network  
+- Example: City internet system  
+
+### 🌍 WAN (Wide Area Network)
+- Very large (country/continent)  
+- Example: Internet  
+
+---
+
+## ### 7️⃣ IP Classes (Very Important)
+
+### 🅰️ Class A
+- Range: 1.0.0.0 – 126.0.0.0  
+- Default Subnet: 255.0.0.0  
+- Hosts: Very large networks  
+- Usage: Big organizations  
+
+### 🅱️ Class B
+- Range: 128.0.0.0 – 191.255.0.0  
+- Default Subnet: 255.255.0.0  
+- Hosts: Medium networks  
+- Usage: Universities, companies  
+
+### 🅲 Class C
+- Range: 192.0.0.0 – 223.255.255.0  
+- Default Subnet: 255.255.255.0  
+- Hosts: Small networks  
+- Usage: Homes, small businesses  
+
+### 🅳 Class D
+- Range: 224.0.0.0 – 239.255.255.255  
+- Usage: Multicast (group communication)  
+
+### 🅴 Class E
+- Range: 240.0.0.0 – 255.255.255.255  
+- Usage: Experimental  
+
+---
+
+## ### 8️⃣ Ports (Cybersecurity)
+- Port: Communication endpoint  
+- Used for: Connecting services on a system  
+
+### Common Ports:
+- HTTP: Port 80 → Web traffic → Not secure  
+- HTTPS: Port 443 → Secure web  
+- FTP: Port 21 → File transfer → Weak security  
+- SSH: Port 22 → Remote access  
+- DNS: Port 53 → Domain resolution  
+
+---
+
+## ### 9️⃣ Common Vulnerabilities
+- Open ports → Attackers can access services  
+- Weak services → Example: FTP (no encryption)  
+- Misconfigured ports → Easy entry point  
+
+---
+
+## ### 🔴 Red Team (Attackers)
+- Scan network → Find open ports  
+- Identify vulnerabilities  
+- Exploit weak services  
+
+---
+
+## ### 🔵 Blue Team (Defenders)
+- Monitor network traffic  
+- Close unused ports  
+- Detect suspicious activity  
+
+## ### 🧪 Basic Networking Commands (Kali Linux)
+
+### ping
+- Check connectivity  
+- Example: ping google.com  
+
+### ifconfig
+- Show IP address  
+
+### netstat
+- Show active connections
+
 
