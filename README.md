@@ -2,6 +2,7 @@
 week1
 Downloading Vbox and Kali Linux
 
+
 Linux
 VirtualBox is a virtualization software developed by  that allows users to run multiple operating systems on a single computer. ###It creates virtual machines where different systems can be installed and tested safely without affecting the main system.
 Kali Linux is a Debian-based Linux distribution developed by .### It is widely used for cybersecurity, penetration testing, and ethical hacking.<br> Kali Linux comes pre-installed with many security tools used for network analysis, vulnerability testing, and digital forensics.
