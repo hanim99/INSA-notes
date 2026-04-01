@@ -343,4 +343,144 @@ a collection two or more  connected device
 ### netstat
 - Show active connections
 
+- ## Part 1: Common Ports (Usage + Vulnerabilities)
+
+### 1️⃣ Port 20 – FTP (Data Transfer)
+- Usage: Transfers files between client and server  
+- Vulnerability: Data is not encrypted → easy to sniff credentials
+
+### 2️⃣ Port 21 – FTP (Control)
+- Usage: Manages FTP commands  
+- Vulnerability: Brute force attacks, anonymous login abuse
+
+### 3️⃣ Port 22 – SSH
+- Usage: Secure remote login  
+- Vulnerability: Brute force, weak passwords, outdated versions
+
+### 4️⃣ Port 23 – Telnet
+- Usage: Remote access (legacy)  
+- Vulnerability: No encryption, very insecure
+
+### 5️⃣ Port 25 – SMTP
+- Usage: Sending emails  
+- Vulnerability: Email spoofing, spam relay attacks
+
+### 6️⃣ Port 53 – DNS
+- Usage: Domain name resolution  
+- Vulnerability: DNS spoofing, cache poisoning, DDoS amplification
+
+### 7️⃣ Port 67 – DHCP (Server)
+- Usage: Assigns IP addresses  
+- Vulnerability: Rogue DHCP attacks
+
+### 8️⃣ Port 68 – DHCP (Client)
+- Usage: Receives IP configuration  
+- Vulnerability: Network spoofing attacks
+
+### 9️⃣ Port 69 – TFTP
+- Usage: Simple file transfer  
+- Vulnerability: No authentication, easy exploitation
+
+### 10️⃣ Port 80 – HTTP
+- Usage: Web browsing  
+- Vulnerability: MITM attacks, data interception
+
+### 11️⃣ Port 110 – POP3
+- Usage: Retrieve emails  
+- Vulnerability: Credentials sent in plain text
+
+### 12️⃣ Port 119 – NNTP
+- Usage: Newsgroups  
+- Vulnerability: Data leakage, outdated protocol
+
+### 13️⃣ Port 123 – NTP
+- Usage: Time synchronization  
+- Vulnerability: DDoS amplification attacks
+
+### 14️⃣ Port 137 – NetBIOS Name
+- Usage: Name resolution in Windows  
+- Vulnerability: Information leakage
+
+### 15️⃣ Port 138 – NetBIOS Datagram
+- Usage: File/printer sharing  
+- Vulnerability: Network enumeration attacks
+
+### 16️⃣ Port 139 – NetBIOS Session
+- Usage: Windows file sharing  
+- Vulnerability: SMB attacks, unauthorized access
+
+### 17️⃣ Port 143 – IMAP
+- Usage: Email retrieval  
+- Vulnerability: Plain text login (if not secured)
+
+### 18️⃣ Port 161 – SNMP
+- Usage: Network management  
+- Vulnerability: Weak community strings
+
+### 19️⃣ Port 162 – SNMP Trap
+- Usage: Sends alerts  
+- Vulnerability: Network mapping
+
+### 20️⃣ Port 179 – BGP
+- Usage: Routing between networks  
+- Vulnerability: Route hijacking
+
+### 21️⃣ Port 389 – LDAP
+- Usage: Directory services  
+- Vulnerability: Injection attacks, data exposure
+
+### 22️⃣ Port 443 – HTTPS
+- Usage: Secure web browsing  
+- Vulnerability: SSL/TLS misconfiguration
+
+### 23️⃣ Port 445 – SMB
+- Usage: File sharing (Windows)  
+- Vulnerability: Ransomware attacks (e.g., WannaCry)
+
+### 24️⃣ Port 465 – SMTPS
+- Usage: Secure email sending  
+- Vulnerability: Improper SSL configuration
+
+### 25️⃣ Port 500 – ISAKMP (IPSec)
+- Usage: VPN key exchange  
+- Vulnerability: IKE brute force attacks
+
+### 26️⃣ Port 514 – Syslog
+- Usage: Log messages  
+- Vulnerability: Log injection, spoofing
+
+### 27️⃣ Port 515 – LPD
+- Usage: Printer services  
+- Vulnerability: Unauthorized print jobs
+
+### 28️⃣ Port 520 – RIP
+- Usage: Routing protocol  
+- Vulnerability: Route poisoning
+
+### 29️⃣ Port 587 – SMTP (Secure Submission)
+- Usage: Sending email securely  
+- Vulnerability: Authentication attacks
+
+### 30️⃣ Port 636 – LDAPS
+- Usage: Secure LDAP  
+- Vulnerability: Certificate misconfiguration
+
+### 31️⃣ Port 989 – FTPS (Data)
+- Usage: Secure FTP data transfer  
+- Vulnerability: Misconfigured encryption
+
+### 32️⃣ Port 990 – FTPS (Control)
+- Usage: Secure FTP control  
+- Vulnerability: Weak SSL/TLS setup
+
+### 33️⃣ Port 993 – IMAPS
+- Usage: Secure email retrieval  
+- Vulnerability: SSL misconfigurations
+
+### 34️⃣ Port 995 – POP3S
+- Usage: Secure POP3  
+- Vulnerability: Certificate issues
+
+  
+
 
