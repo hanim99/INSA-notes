@@ -11,12 +11,24 @@ VirtualBox is commonly used to run Kali Linux on a PC, making it easy for learne
 Kali Linux is a Linux-based Operating System (OS) designed for:
 Ethical hacking
 Penetration testing (Pentesting)
+
+
 Cybersecurity learning
+
+
 It comes with built-in tools used by:
+
+
 🔴 Red Team (attackers)
+
+
 🔵 Blue Team (defenders)
+
 It is mainly used through the Terminal (CLI – Command Line Interface)
+
+
 💻 Kali Linux Terminal Commands
+
 Bash
 pwd → Print Working Directory
 
@@ -182,7 +194,10 @@ ps aux | grep firefox
 14. Useful Commands 
 
 mkdir folder touch file.txt cp file.txt copy.txt mv file.txt newname.txt rm file.txt
-week4/day4
+
+
+
+week2 day2
 
 Networking
 a collection two or more  connected device
@@ -477,11 +492,362 @@ a collection two or more  connected device
 ### 33️⃣ Port 993 – IMAPS
 - Usage: Secure email retrieval  
 - Vulnerability: SSL misconfigurations
+- 
 
 ### 34️⃣ Port 995 – POP3S
 - Usage: Secure POP3  
 - Vulnerability: Certificate issues
 
-  
+week3 day1
+
+## ### 1️⃣ Physical Layer (Layer 1)
+
+💻 Network:
+- Definition: This layer is used to transmit raw bits (0s and 1s) through physical medium  
+- Works with cables, signals, hardware  
+
+👤 User:
+So it’s just the physical connection?
+
+💻 Network:
+Exactly ✔️
+
+### Protocols:
+- No TCP/UDP (just signals)
+
+### Vulnerabilities / Attacks:
+- Cable tapping  
+- Signal interception  
+- Physical damage  
+
+---
+
+## ### 2️⃣ Data Link Layer (Layer 2)
+
+💻 Network:
+- Definition: This layer is used to transfer data between devices on the same network using MAC addresses  
+
+👤 User:
+So like WiFi and local network?
+
+💻 Network:
+Yes 👍
+
+### Protocols:
+- Ethernet  
+- ARP → maps IP to MAC  
+
+### Vulnerabilities / Attacks:
+- ARP Spoofing (fake MAC mapping)  
+- MAC flooding  
+- Switch attacks  
+
+---
+
+## ### 3️⃣ Network Layer (Layer 3)
+
+💻 Network:
+- Definition: This layer is used to assign IP addresses and route data between networks  
+
+👤 User:
+So this is where IP works?
+
+💻 Network:
+Exactly 🌍
+
+### Protocols:
+- IP (IPv4, IPv6) → addressing  
+- ICMP → used by ping  
+
+### Vulnerabilities / Attacks:
+- IP Spoofing  
+- Routing attacks  
+- ICMP abuse (ping flood)  
+
+---
+
+## ### 4️⃣ Transport Layer (Layer 4)
+
+💻 Network:
+- Definition: This layer is used to ensure data delivery (reliable or fast) using ports  
+
+👤 User:
+This is where TCP and UDP come right?
+
+💻 Network:
+YES 🔥
+
+### Protocols:
+- TCP (Transmission Control Protocol)  
+  - Reliable ✔️  
+  - Connection-based  
+  - Slower but accurate  
+  - Used for: Web (HTTP/HTTPS), emails  
+
+- UDP (User Datagram Protocol)  
+  - Fast ⚡  
+  - No connection  
+  - Less reliable  
+  - Used for: Streaming, gaming, DNS  
+
+### Vulnerabilities / Attacks:
+- TCP SYN Flood (DoS attack)  
+- UDP flooding  
+- Port scanning  
+
+---
+
+## ### 5️⃣ Session Layer (Layer 5)
+
+💻 Network:
+- Definition: This layer is used to establish, manage, and terminate sessions between devices  
+
+👤 User:
+Like keeping me logged in?
+
+💻 Network:
+Exactly ✔️
+
+### Protocols:
+- NetBIOS  
+- RPC  
+
+### Vulnerabilities / Attacks:
+- Session hijacking  
+- Replay attacks  
+
+---
+
+## ### 6️⃣ Presentation Layer (Layer 6)
+
+💻 Network:
+- Definition: This layer is used to format, encrypt, and encode data  
+
+👤 User:
+So this is security?
+
+💻 Network:
+Yes 🔐
+
+### Protocols:
+- SSL/TLS → encryption  
+
+### Vulnerabilities / Attacks:
+- SSL stripping  
+- Weak encryption  
+- Certificate attacks  
+
+---
+
+## ### 7️⃣ Application Layer (Layer 7)
+
+💻 Network:
+- Definition: This layer is used to provide services directly to the user (applications)  
+
+👤 User:
+Like browser and email?
+
+💻 Network:
+Exactly 💻
+
+### Protocols:
+- HTTP / HTTPS → web browsing  
+- FTP → file transfer  
+- DNS → domain resolution  
+- SMTP → email sending  
+
+### Vulnerabilities / Attacks:
+- SQL Injection  
+- Cross-Site Scripting (XSS)  
+- Phishing  
+- Malware attacks  
+
+---
+
+# 🛠️ Cybersecurity Tools – Notes
+
+---
+
+## ### 1️⃣ Steganography
+- Definition: Technique of hiding data inside files (image, audio, video)  
+- Purpose: Conceal secret information without raising suspicion  
+
+### Example:
+- Hiding a text file inside an image  
+
+### Use in Cybersecurity:
+- CTF challenges  
+- Data hiding by attackers  
+
+---
+
+## ### 2️⃣ Steghide
+- Definition: Tool used to hide and extract data from images/audio files  
+
+### Usage:
+- Hide data:
+  - steghide embed -cf image.jpg -ef secret.txt
+- Extract data:
+  - steghide extract -cf image.jpg
+
+### Key Point:
+- Requires a passphrase  
+
+---
+
+## ### 3️⃣ Stegseek
+- Definition: Fast tool to crack steghide passphrases  
+
+### Usage:
+- stegseek image.jpg wordlist.txt
+
+### Purpose:
+- Brute-force the password used in steghide  
+
+### Advantage:
+- Much faster than steghide brute-force  
+
+---
+
+## ### 4️⃣ strings
+- Definition: Extracts readable text from files  
+
+### Usage:
+- strings file.txt
+- strings image.jpg
+
+### Purpose:
+- Find hidden text inside files  
+
+### Use in CTF:
+- Quickly locate flags or clues  
+
+---
+
+## ### 5️⃣ grep
+- Definition: Searches for specific text patterns  
+
+### Usage:
+- grep "flag" file.txt
+
+### Purpose:
+- Filter and find important data  
+
+### Example:
+- Find flag:
+  - strings file.jpg | grep flag
+
+---
+
+## ### 6️⃣ ping
+- Definition: Checks connectivity between devices  
+
+### Usage:
+- ping google.com
+
+### Purpose:
+- Test if a host is reachable  
+
+---
+
+## ### 7️⃣ binwalk
+- Definition: Tool to analyze and extract hidden data from files  
+
+### Usage:
+- Scan file:
+  - binwalk image.jpg
+- Extract hidden files:
+  - binwalk -e image.jpg
+
+### Purpose:
+- Find embedded files inside images or firmware  
+
+---
+
+## ### 🔐 Key Cybersecurity Tips
+- Combine tools:
+  - strings + grep → fast flag search  
+  - binwalk + steghide → deep analysis  
+- Always check files for hidden data  
+- Use wordlists with stegseek for password cracking  
+
+---
+
+## ### 🧠 Quick Summary
+- Steganography: Hiding data  
+- Steghide: Hide/extract data  
+- Stegseek: Crack passwords  
+- strings: Extract readable text  
+- grep: Search text  
+- ping: Check connectivity  
+- binwalk: Analyze hidden files
+
+
+  week3 day2
+
+  ## Part 2: Event Viewer & System Logging
+
+### 1️⃣ Event Viewer Overview
+- Definition: Windows tool to monitor, view, and manage system, security, and application logs  
+- Purpose: Detect security incidents, system errors, and audits events  
+- How to open: Win + R → eventvwr.msc or search Event Viewer
+
+### 2️⃣ Event Logs in Windows
+- Location: C:\Windows\System32\winevt\Logs  
+
+#### Types of Event Logs:
+- Application Logs: Track crashes, errors, warnings  
+- System Logs: Track hardware failures, driver issues  
+- Security Logs: Track login attempts, policy changes, privilege use  
+- Setup Logs: Track installations and updates  
+- Forwarded Events: Logs from remote computers
+
+### 3️⃣ Event IDs
+- Definition: Unique number assigned to each event  
+- Examples:  
+  - 4625 → Failed login  
+  - 4104 → PowerShell script block execution  
+
+#### Event ID Record Includes:
+- Date/Time  
+- Event ID  
+- Source (Application/System/Service)  
+- User  
+- Computer  
+- Details/Description
+
+### 4️⃣ Log Management Concepts
+- Log Clearing: Deletes or archives logs to hide traces or manage space  
+- Audit Policy: Configures which events get logged  
+- Forwarding Logs: Sends logs to centralized server  
+- Archiving: Saves .evtx for later investigation
+
+### 5️⃣ System32 Folder & Logs
+- System32: Core Windows system files  
+- Logs Location: C:\Windows\System32\winevt\Logs  
+- Importance: Attackers may delete or modify logs; helps track unauthorized access
+
+### 6️⃣ PowerShell & Logging
+- Definition: Command-line shell & scripting language  
+- Uses in cybersecurity: Running scripts, investigating events, automating log analysis  
+
+#### Commands:
+- Get-EventLog -LogName Security → View security logs  
+- Clear-EventLog -LogName Security → Clear logs  
+- Get-WinEvent -FilterHashtable @{Id=4104} → Filter by Event ID  
+
+- Risk: Attackers can hide traces or clear logs via PowerShell
+
+### 7️⃣ Common Security Concerns
+- Log Clearing hides malicious activity  
+- Unauthorized access changes logs  
+- Event ID misuse triggers alerts  
+- System32 manipulation allows persistence
+
+### 8️⃣ Tips for Cybersecurity Students
+- Memorize Event IDs: 4625, 4624, 4104  
+- Check logs regularly  
+- Use PowerShell to filter/export logs  
+- Never ignore warnings/errors
 
 
